@@ -24,7 +24,10 @@ body {
 }
 
 #menu {
-	
+	color: #fff;
+	display: block;
+	padding: 14px 30px;
+	text-decoration: none;
 	background-color: #b30000;
 }
 
