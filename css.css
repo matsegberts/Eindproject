@@ -1,0 +1,52 @@
+body {
+	background-attachment: fixed;
+	background-image: url("../afbeeldingen/halopp.jpg");
+	background-repeat: none;
+	background-size: cover;
+	font-family: "Comic-sans";
+	font-size: 1.2em;
+	margin: 0;
+}
+
+#header {
+	background: linear-gradient(to bottom, #1188cc,black);
+	font-size: 4em;
+	padding: 10px 0px;
+	text-align: center;
+}
+
+#header a {
+	color: #fff;
+	font-variant: small-caps;
+	text-decoration: none;
+}
+
+#header a:hover {
+	text-decoration: none;
+	color: #d1eeff;
+}
+
+#menu {
+	background-color: #000;
+}
+
+.menuitem a {
+	color: #fff;
+	display: block;
+	padding: 14px 30px;
+	text-decoration: none;
+}
+
+.menuitem a:hover {
+	background-color: #fff;
+	color: #fff;
+}
+
+table, td, th, tr {
+	border-collapse: collapse;
+    padding: 0;
+}
+
+td, th {
+    height: 1.8em;
+}
