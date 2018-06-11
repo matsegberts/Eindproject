@@ -1,44 +1,89 @@
+a {
+	color: #1188cc;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
 body {
-	font-family: "Comic-sans";
-	font-size: 1.2em;
+	background-attachment: fixed;
+	background-color: #1188cc;
+	background-image: url("../images/image.png");
+	background-repeat: repeat-x;
+	font-family: "verdana";
+	font-size: 0.9em;
 	margin: 0;
-	background-color: #ffcc00;
+}
+
+#container {
+	background-color: #fff;
+	margin: 0 auto;
+	width: 1200px;
+}
+
+#content {
+	line-height: 1.5em;
+	padding: 15px;
+}
+
+#content li {
+	text-indent: 20px;
 }
 
 #header {
-	background: #004d99;
 	font-size: 4em;
 	padding: 10px 0px;
 	text-align: center;
 }
 
-#header a {
+#footer {
+	background-color: #000;
 	color: #fff;
+	padding: 10px;
+}
+
+#footer a {
+	color: #fff;
+	text-decoration: underline;
+}
+
+#footer a:hover {
+	text-decoration: none;
+}
+
+#header a {
+	color: #1188cc;
 	font-variant: small-caps;
 	text-decoration: none;
 }
 
 #header a:hover {
-	text-decoration: none;
-	color: #d1eeff;
+	color: #000;
 }
 
 #menu {
-	color: #fff;
-	display: block;
-	padding: 14px 30px;
-	text-decoration: none;
-	background-color: #b30000;
+	background-color: #000;
 }
 
-.menuitem a  {
+.menuitem a {
 	color: #fff;
 	display: block;
-	padding: 14px 30px;
+	padding: 14px 16px;
 	text-decoration: none;
 }
 
 .menuitem a:hover {
-	background-color: #fff;
+	background-color: #1188cc;
 	color: #fff;
+}
+
+table, td, th, tr {
+	border-collapse: collapse;
+    padding: 0;
+}
+
+td, th {
+    height: 1.8em;
 }
