@@ -1,15 +1,12 @@
 body {
-	background-attachment: fixed;
-	background-image: url("../afbeeldingen/halopp.jpg");
-	background-repeat: none;
-	background-size: cover;
 	font-family: "Comic-sans";
 	font-size: 1.2em;
 	margin: 0;
+	background-color: #ffcc00;
 }
 
 #header {
-	background: linear-gradient(to bottom, #1188cc,black);
+	background: #004d99;
 	font-size: 4em;
 	padding: 10px 0px;
 	text-align: center;
@@ -27,7 +24,8 @@ body {
 }
 
 #menu {
-	background-color: #000;
+	
+	background-color: #b30000;
 }
 
 .menuitem a {
