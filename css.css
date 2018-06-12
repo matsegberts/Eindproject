@@ -8,13 +8,6 @@ body {
 }
 
 
-
-
-
-
-
-
-
 #content {
     padding: 15px;
 }
@@ -29,70 +22,31 @@ body {
 
 
 
-
-
-
-
-
 #header a {
     color: blue;
     font-variant: small-caps;
     text-decoration: none;
 }
 
-#header a:hover {
-    display: none;
-}
 
-#headersubtext {
-    font-size: 0.5em;
-}
 
-#headersubtext a {
-    color: #1188cc;
-    text-decoration: none;
-}
 
-input[type=button],
-input[type=submit],
-input[type=reset] {
-    background-color: #1188cc;
-    border-color: #1188cc;
-    color: #fff;;
-    font-family: verdana;
-    font-size: 1.1em;
-}
 
-input[type=email],
-input[type=password],
-input[type=text],
-select {
-    background-color: #fff;
-    border-color: #000; 
-    color: #000;
-    font-family: verdana;
-    font-size: 1.1em;
-    margin: 0.1em;
-    padding-left: 0.2em;
-}
 
-label {
-    padding-right: 10px;
-}
 
 #menu {
-    background-color: #000;
+    background-color: yellow;
 }
 
 .menuitem a {
-    color: #fff;
+    color: yellow;
     display: block;
     padding: 14px 16px;
     text-decoration: none;
 }
 
 .menuitem a:hover {
-    background-color: #1188cc;
+    background-color: green;
     color: #fff;
 }
 
@@ -105,28 +59,6 @@ td {
     height: 1.8em;
 }
 
-.textcenter {
-    text-align: center;
-}
 
-#topmenu {
-    background-color: #000;
-    color: #fff;
-    font-size: 0.8em;
-    padding: 5px;
-    text-align: right;
-}
 
-.topmenuitem a {
-    color: #fff;
-    text-decoration: none;
-}
 
-.topmenuitem a:hover {
-    text-decoration: underline;
-}
-
-.overview td, .overview th {
-    padding: 0px 10px;
-    text-align: left;
-}
