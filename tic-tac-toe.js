@@ -8,10 +8,10 @@ function volgende(invullingvak){
 }
 
 function veranderbeurt(){
-if(docment.beurt === "X"{
-   docment.beurt = "O";
+if(document.beurt === "X"{
+   document.beurt = "O";
 }
 else{
-   docment.beurt = "X";
+   document.beurt = "X";
    }
 }
