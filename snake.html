@@ -5,9 +5,7 @@
         font-size: 100px;
     }
     
-    canvas{
-    margin-left: 300px
-    }
+    
 </style>    
 
 
@@ -41,7 +39,7 @@ function game() {
         py= 0;
     }
     ctx.fillStyle="black";
-    ctx.fillRect(300,100,400,400);
+    ctx.fillRect(0,0,canv.width,canv.height);
  
     ctx.fillStyle="lime";
     for(var i=0;i<trail.length;i++) {
