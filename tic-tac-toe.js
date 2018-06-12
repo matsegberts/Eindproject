@@ -38,7 +38,7 @@ function veranderbeurt(){
     else{
        document.beurt = "X";
        }
-      setMessage("Het is" + document.beurt +"'s beurt");
+      setMessage("Het is " + document.beurt +"'s beurt");
   }
 }
 
