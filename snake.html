@@ -7,7 +7,7 @@
 </style>    
 
 
-<canvas id="gc" width="600" height="600"></canvas>
+<canvas id="gc" width="400" height="400"></canvas>
 <script>
 window.onload=function() {
     canv=document.getElementById("gc");
@@ -15,9 +15,9 @@ window.onload=function() {
     document.addEventListener("keydown",keyPush);
     setInterval(game,1000/15);
 }
-px=py=15;
-gs=tc=30;
-ax=ay=22.5;
+px=py=10;
+gs=tc=20;
+ax=ay=15;
 xv=yv=0;
 trail=[];
 tail = 5;
