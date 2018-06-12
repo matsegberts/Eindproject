@@ -13,14 +13,14 @@
 <canvas id="gc" width="400" height="400"></canvas>
 <p>Hello there!
 welcome to my game
-    <button onclick="hey()">Start!</button>
+    <button onclick="begin()">Start!</button>
 </p>
 
 
     <script>
         m=false;
         
-  if(m==true){  window.onload=function() {
+  if(m==true){ function() {
         canv=document.getElementById("gc");
         ctx=canv.getContext("2d");
         document.addEventListener("keydown",keyPush);
