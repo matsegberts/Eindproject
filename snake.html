@@ -4,10 +4,14 @@
         text-align: centre;
         font-size: 100px;
     }
+    
+    canvas{
+    padding-left: 300px
+    }
 </style>    
 
 
-<canvas id="gc" width="600" height="600"></canvas>
+<canvas id="gc" width="400" height="400"></canvas>
 <script>
 window.onload=function() {
     canv=document.getElementById("gc");
@@ -15,9 +19,9 @@ window.onload=function() {
     document.addEventListener("keydown",keyPush);
     setInterval(game,1000/15);
 }
-px=py=15;
-gs=tc=30;
-ax=ay=22.5;
+px=py=10;
+gs=tc=20;
+ax=ay=15;
 xv=yv=0;
 trail=[];
 tail = 5;
@@ -37,11 +41,11 @@ function game() {
         py= 0;
     }
     ctx.fillStyle="black";
-    ctx.fillRect(0,0,canv.width,canv.height);
+    ctx.fillRect(300,100,canv.width,canv.height);
  
     ctx.fillStyle="lime";
     for(var i=0;i<trail.length;i++) {
-        ctx.fillRect(trail[i].x*gs,trail[i].y*gs,gs-3,gs-3);
+        ctx.fillRect(trail[i].x*gs,trail[i].y*gs,gs-2,gs-2);
         if(trail[i].x==px && trail[i].y==py) {
             tail = 5;
         }
@@ -57,7 +61,7 @@ function game() {
         ay=Math.floor(Math.random()*tc);
     }
     ctx.fillStyle="red";
-    ctx.fillRect(ax*gs,ay*gs,gs-3,gs-3);
+    ctx.fillRect(ax*gs,ay*gs,gs-2,gs-2);
 }
 function keyPush(evt) {
     switch(evt.keyCode) {
@@ -76,5 +80,5 @@ function keyPush(evt) {
     }
 }
 </script>
-<br />
-<p> HELLO AND WELCOME</P>
+
+
