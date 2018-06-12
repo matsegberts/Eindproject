@@ -8,7 +8,7 @@ function volgende(invullingvak){
 }
 
 function veranderbeurt(){
-if(document.beurt === "X"{
+if(document.beurt === "X"){
    document.beurt = "O";
 }
 else{
