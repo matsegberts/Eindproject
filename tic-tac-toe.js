@@ -1,5 +1,6 @@
 function start(){
   document.beurt = "X";
+  document.win = null;
   setMessage(document.beurt + " mag beginnen.");
 }
 
@@ -8,17 +9,22 @@ function setMessage(msg){
 }
 
 function volgende(invullingvak){
-  if(invullingvak.innerText === ""){
-    invullingvak.innerText = document.beurt;
-    veranderbeurt();
-  } 
-  else{
+  if(document.win != null) {
+  }
+  else
+    if(invullingvak.innerText === ""){
+      invullingvak.innerText = document.beurt;
+      veranderbeurt();
+    } 
+    else{
+    }
   }
 }
 
 function veranderbeurt(){
   if(winnaar(document.beurt)){
     setMessage(document.beurt + " heeft gewonnen!");
+    document.win = document.beurt;
   }
   else{
     if(document.beurt === "X"){
@@ -58,3 +64,9 @@ function drieOpEenRij(vlaknummer){
   return document.getElementById("vlakje" + vlaknummer).innerText;
   
 }
+
+function.opnieuw(vlaknummer){
+  document.getElementById("vlakje" + vlaknummer).innerText = ""; 
+}
+
+
