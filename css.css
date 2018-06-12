@@ -43,9 +43,10 @@ body {
     display: block;
     padding: 14px 16px;
     text-decoration: none;
+    background-color: #02gg83;
 }
 
-.menuitem hover {
+.menuitem:hover {
     background-color: green;
     color: #fff;
 }
