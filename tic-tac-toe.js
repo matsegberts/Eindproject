@@ -1,6 +1,6 @@
 function start(){
   document.beurt = "X";
-  setMessage(document.turn + " mag beginnen.");
+  setMessage(document.beurt + " mag beginnen.");
 }
 
 function setMessage(msg){
@@ -8,8 +8,13 @@ function setMessage(msg){
 }
 
 function volgende(invullingvak){
-  invullingvak.innerText = document.beurt;
-  veranderbeurt();
+  if(invullingvak.innerText === ""){
+    invullingvak.innerText = document.beurt;
+    veranderbeurt();
+  } 
+  else{
+    
+  }
 }
 
 function veranderbeurt(){
@@ -19,5 +24,6 @@ if(document.beurt === "X"){
 else{
    document.beurt = "X";
    }
+  setMessage("Het is" + document.beurt +"'s beurt");
 }
 
