@@ -1,75 +1,46 @@
-.active {
-    background-color: #1188cc;
-    color: #fff;    
-}
+
 
 body {
-    background-color: #1188cc;
+    background-color: #red;
     font-family: verdana;
     font-size: 14px;
 	margin: 0;    
 }
 
-#breadcrumbs {
-    padding: 15px;
-}
 
-#breadcrumbs a {
-    color: #1188cc;
-    text-decoration: none;
-}
 
-#breadcrumbs a:hover {
-    text-decoration: underline;
-}
 
-.centertag {
-    margin: 0 auto;
-}
 
-#container {
-    background-color: #fff;
-    margin: 0 auto;
-    width: 1200px;
-}
+
+
+
 
 #content {
     padding: 15px;
 }
 
 #header {
-    font-size: 4em;
-    padding: 10px 0px;    
+    font-size: 30px;
+    
     text-align: center;
 }
 
-#footer {
-    background-color: #000;
-    color: #fff;
-    padding: 10px;
-}
 
-#footer a {
-    color: #fff;
-    text-decoration: underline;
-}
 
-#footer a:hover {
-    text-decoration: none;
-}
 
-.formbuttons {
-    margin-top: 15px;
-}
+
+
+
+
 
 #header a {
-    color: #1188cc;
+    color: #green;
     font-variant: small-caps;
     text-decoration: none;
 }
 
 #header a:hover {
-    color: #000;
+    display: none;
 }
 
 #headersubtext {
