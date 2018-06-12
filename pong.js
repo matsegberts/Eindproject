@@ -44,18 +44,18 @@ function besturingbal(){
   if (bal.y > height || bal.y < 0){
     balV.y * -1;
   }
-  if (bal.x <= 30 ){
+  if (bal.x <= 30 && bal.x >= 20){
     if(bal.y > p1 && bal.y < p1 + 100){
     balV.x * -1;
       console.log("p1");
     }
       
   } 
-  else (bal.x > width - 30){
+  else (bal.x > width - 30 && ){
     if(bal.y > p2 && bal.y < p2 + 100){
       balV.x * -1;
-        console.log("p2");
-  }
+        
+  }ball.x <= wicht - 10
   
   bal.x + balV.x;
   bal.y + balV.y;
