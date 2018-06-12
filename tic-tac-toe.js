@@ -1,5 +1,10 @@
 function start(){
   document.beurt = "X";
+  setMessage(document.turn + " mag beginnen.");
+}
+
+function setMessage(msg){
+  document.getElementById("message").innerText = msg;
 }
 
 function volgende(invullingvak){
