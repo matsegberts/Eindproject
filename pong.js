@@ -17,7 +17,7 @@ function setup(){
   p2V = 0;
   
   bal = createVector(widht / 2 , height /2);
-  balV = createVector(random(-2,2), random(-2,2));
+  balV = createVector(random(4), random(4));
 }
 
 function draw(){
@@ -37,6 +37,28 @@ function draw(){
 }
 
 function besturingbal(){
+  
+  bal.x + balV.x;
+  bal.y + balV.y;
+  
+  if (bal.y > height || bal.y < 0){
+    balV.y * -1;
+  }
+  if (bal.x <= 30 ){
+    if(bal.y > p1 && bal.y < p1 + 100){
+    balV.x * -1;
+      console.log("p1");
+    }
+      
+  } 
+  else (bal.x > width - 30){
+    if(bal.y > p2 && bal.y < p2 + 100){
+      balV.x * -1;
+        console.log("p2");
+  }
+  
+  bal.x + balV.x;
+  bal.y + balV.y;
 }
  
 function bestuting(){
@@ -54,7 +76,7 @@ function bestuting(){
     p2V  5;
   } 
   p1V * 0,6;
-  p2V * 0.5;
+  p2V * 0.6;
   p1 + p1V;
   p2 + p2V;
     }
