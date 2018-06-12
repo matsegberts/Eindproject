@@ -2,7 +2,7 @@ const cvs = document.getElementById('canvas');
 const ctx = csv.getContext('2d')
 
 let imageName=new Image();
-    imageName.src="path/image.png";
+    imageName.src="Documenten/snek.png";
 let audioName=new Audio();
     audioName.src="path/audio.png"; audioName.play();
 
