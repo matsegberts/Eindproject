@@ -18,7 +18,7 @@ function volgende(invullingvak){
 
 function veranderbeurt(){
   if(winnaar(document.beurt)){
-    setMessage(document.beurt + " heeft gewonnen!")
+    setMessage(document.beurt + " heeft gewonnen!");
   }
   else{
     if(document.beurt === "X"){
@@ -34,13 +34,13 @@ function veranderbeurt(){
 function winnaar(move){
   var result = false;
   if(rijen(1, 2, 3, move)||
-     rijen(1, 2, 3, move)||
-     rijen(1, 2, 3, move)||
-     rijen(1, 2, 3, move)||
-     rijen(1, 2, 3, move)||
-     rijen(1, 2, 3, move)||
-     rijen(1, 2, 3, move)||
-     rijen(1, 2, 3, move)) {
+     rijen(4, 5, 6, move)||
+     rijen(7, 8, 9, move)||
+     rijen(1, 4, 7, move)||
+     rijen(2, 5, 8, move)||
+     rijen(3, 6, 9, move)||
+     rijen(1, 5, 9, move)||
+     rijen(3, 5, 7, move)) {
       result = true;
   }
   return result;
@@ -55,6 +55,6 @@ function rijen(a, b, c, move){
 }
 
 function drieOpEenRij(vlaknummer){
-  return document.getElementById("valkje" + vlaknummer).innerText;
+  return document.getElementById("vlakje" + vlaknummer).innerText;
   
 }
