@@ -4,7 +4,11 @@ friction = 0.85;
 
 rotationForce = 0.0;
 
-message = 'Games';
+games = 'Games';
 
-drawName(message);
+drawName(games);
 bounceBubbles();
+
+function setMessage(msg){
+  document.getElementById("games").innerText = msg;
+}
