@@ -11,7 +11,7 @@ function setMessage(msg){
 function volgende(invullingvak){
   if(document.win != null) {
   }
-  else
+  else{
     if(invullingvak.innerText === ""){
       invullingvak.innerText = document.beurt;
       veranderbeurt();
