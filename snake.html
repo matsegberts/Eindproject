@@ -3,7 +3,7 @@
     p{
         text-align: centre;
         font-size: 50px;
-        margin-top: 420px;
+        margin-top: 10px;
     }
     
     
@@ -20,7 +20,7 @@ welcome to my game
     <script>
         m=false;
         
-  if(m==true){  window.onClick=function() {
+  if(m==true){  window.onload=function() {
         canv=document.getElementById("gc");
         ctx=canv.getContext("2d");
         document.addEventListener("keydown",keyPush);
