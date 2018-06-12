@@ -1,4 +1,9 @@
 function start(){
+  
+  for(var i =1; i<=9; i++){
+    opnieuw(i)
+  }
+  
   document.beurt = "X";
   document.win = null;
   setMessage(document.beurt + " mag beginnen.");
@@ -65,7 +70,7 @@ function drieOpEenRij(vlaknummer){
   
 }
 
-function.opnieuw(vlaknummer){
+function opnieuw(vlaknummer){
   document.getElementById("vlakje" + vlaknummer).innerText = ""; 
 }
 
