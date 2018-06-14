@@ -22,7 +22,7 @@ a {
    text-decoration: none;
    font-size: 25px;
 }
-a :hover{
+#opnieuw:hover{
    text-decoration: underline;
 }
 
