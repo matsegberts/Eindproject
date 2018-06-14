@@ -70,6 +70,10 @@ function drieOpEenRij(vlaknummer){
   
 }
 
+if (i===9){
+ setMessage("niemand wint");
+}
+
 function opnieuw(vlaknummer){
   document.getElementById("vlakje" + vlaknummer).innerText = ""; 
 }
