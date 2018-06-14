@@ -56,10 +56,11 @@
         for(var i=0;i<trail.length;i++) {
             ctx.fillRect(trail[i].x*gs,trail[i].y*gs,gs-2,gs-2);
             if(trail[i].x==px && trail[i].y==py) {
-                   location.reload();
                    tail=5;
+                   break;
             }
         }
+           
            
         trail.push({x:px,y:py});
         while(trail.length>tail) {
