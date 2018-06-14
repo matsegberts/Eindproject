@@ -28,7 +28,7 @@ function draw(){
   rect(20,x,paddle1,10,200);
   rect(width-20,x,paddle2,10,200);
   
-  ellipse(bal.x,bal.y.20);
+  ellipse(bal.x,bal.y,20);
   
   paddle1 = constrain(paddle1, 0, height-100);
   paddle2 = constrain(paddle2, 0, height-100); 
