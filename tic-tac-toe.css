@@ -10,7 +10,6 @@
 
 
  body { 
-     margin: 0,auto;
      font-family: 'Quicksand', sans-serif;
  }
 
@@ -27,4 +26,8 @@ a {
 
 #message{
    font-size: 35px;
+}
+main {
+   width: 360px;
+   margin: 0 auto
 }
