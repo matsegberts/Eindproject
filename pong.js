@@ -9,7 +9,7 @@ var balV;
 
 function setup(){
   createCanvas(600,400);
-  
+   ctx.fillStyle="black";
  
   paddle1 = height / 2 - 50;
   paddle2 = height / 2 - 50;
@@ -23,7 +23,7 @@ function setup(){
 
 function draw(){
   background(51);
-  ctx.fillStyle="black";
+ 
   ctx.fillRect
   rect(20,x,paddle1,10,200);
   rect(width-20,x,paddle2,10,200);
