@@ -70,8 +70,10 @@ function drieOpEenRij(vlaknummer){
   
 }
 
-if (i===9){
- setMessage("niemand wint");
+function noWinner(i){
+  if (i===9){
+   setMessage("niemand wint");
+  }
 }
 
 function opnieuw(vlaknummer){
