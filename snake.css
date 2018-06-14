@@ -2,3 +2,7 @@ canvas{
   background-color: red;
   color: red;
 }
+
+body{
+  background-color: blue;
+  font-family: 'Quicksand', sans-serif;
