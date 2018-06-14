@@ -17,7 +17,7 @@ function setup(){
   p1V = 0;
   p2V = 0;
   
-  bal = createVector(widht / 2 , height /2);
+  bal = createVector(width / 2 , height /2);
   balV = createVector(random(4), random(4));
 }
 
@@ -63,18 +63,18 @@ function besturingbal(){
   bal.y + balV.y;
 }
  
-function bestuting(){
-  if(toetsIngedrukt(87)){
+function besturing(){
+  if(keyPush(87)){
     p1V - 5;
   }
-  else(toetsIngedrukt(83)){
+  else(keyPush(83)){
     p1V + 5;
   }
 
-  if(toetsIngedrukt(UP_ARROW)){
+  if(keyPush(UP_ARROW)){
     p2V - 5;
   }
-  else(toetsIngedrukt(DOWN_ARROW)){
+  else(keyPush(DOWN_ARROW)){
     p2V  5;
   } 
   p1V * 0,6;
