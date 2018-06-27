@@ -34,8 +34,10 @@ main {
 	display: flex;
 }
 article {
-	border: 20px;
+	border-width: 20px;
 	border-radius: 5px;
+	border-style: solid;
+	border-color: red;
 }
 
 
