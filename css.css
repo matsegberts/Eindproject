@@ -32,7 +32,7 @@ article {
 	border-radius: 5px;
 	border-style: solid;
 	border-color: #9CEB87;
-	margin: 30px;
+	margin: 40px;
 }
 article:nth-child(1) {
 	background-color: white;
@@ -44,5 +44,9 @@ article:nth-child(2) {
 img {
 	width: 400px;
 	height: 400px;
+}
+
+footer{
+  margin-top: 300px;	
 }
 
