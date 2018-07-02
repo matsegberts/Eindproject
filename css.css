@@ -33,7 +33,12 @@ article {
 	border-style: solid;
 	border-color: #0000ff;
 	margin: 30px;
-	
+}
+main:nth-child(1) {
+	background-color: white;
+}
+main:nth-child(2) {
+	background-color: black;
 }
 
 img {
