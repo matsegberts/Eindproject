@@ -48,5 +48,9 @@ img {
 
 footer{
   margin-top: 300px;	
+  text-align: left;
+  font-size: 20px;
+  font-family: 'Play', sans-serif;
+  color: white;		
 }
 
