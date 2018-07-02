@@ -31,7 +31,7 @@ article {
 	border-width: 20px;
 	border-radius: 5px;
 	border-style: solid;
-	background: radial-gradient(red, yellow, green);
+	border-color: #87CEEB;
 	margin: 30px;
 	
 }
