@@ -2,8 +2,6 @@
 
 body {
     background-color: #111;
-    font-family: verdana;
-    font-size: 14px;
 	margin: 0;    
 }
 
@@ -16,16 +14,9 @@ body {
     font-size: 30px;
     color: green;
     text-align: center;
+    font-family: 'Play', sans-serif;
 }
 
-
-
-
-#header a {
-    color: blue;
-    font-variant: small-caps;
-    text-decoration: none;
-}
 
 
 
