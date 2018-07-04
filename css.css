@@ -1,19 +1,26 @@
 		
 
 body {
+	/* achtergrond wordt zwart*/
     background-color: #111;
+	/*afstand tussen tags is 0*/
 	margin: 0;    
 }
 
 
 #content {
+	/*er is een beetje ruimte*/
     padding: 15px;
 }
 
 #header {
+	/*Games is een mooie groote*/
     font-size: 120px;
+	/*En een leuke kleur*/
     color: #87CEEB;
+	/*in het midden*/
     text-align: center;
+	/*leuke online font*/
     font-family: 'Play', sans-serif;
 }
 
