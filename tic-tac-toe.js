@@ -1,3 +1,4 @@
+// functie voor de variabele om opnieuw te gaan
 function start(){
   
   for(var i =1; i<=9; i++){
@@ -13,6 +14,7 @@ function setMessage(msg){
   document.getElementById("message").innerText = msg;
 }
 
+//als het vakje leeg is plaats 
 function volgende(invullingvak){
   if(document.win != null) {
   }
@@ -26,6 +28,7 @@ function volgende(invullingvak){
   }
 }
 
+//geeft weer wie gewonnen heeft en zo lang niemand heeft gewonnen verander de beurt 
 function veranderbeurt(){
   if(winnaar(document.beurt)){
     setMessage(document.beurt + " heeft gewonnen!");
@@ -42,6 +45,7 @@ function veranderbeurt(){
   }
 }
 
+//de eisen voor de rijen als iemand wint
 function winnaar(move){
   var result = false;
   if(rijen(1, 2, 3, move)||
@@ -57,6 +61,7 @@ function winnaar(move){
   return result;
 }
 
+// kijkt of er iemand gewonnen heeft
 function rijen(a, b, c, move){
   var result = false;
   if(drieOpEenRij(a) === move && drieOpEenRij(b) === move && drieOpEenRij(c) === move){
@@ -65,17 +70,13 @@ function rijen(a, b, c, move){
   return result;
 }
 
+//roept een van de vlakjes op
 function drieOpEenRij(vlaknummer){
   return document.getElementById("vlakje" + vlaknummer).innerText;
   
 }
 
-function noWinner(i){
-  if (i===9){
-   setMessage("niemand wint");
-  }
-}
-
+// maakt alle vlakjes weer leeg
 function opnieuw(vlaknummer){
   document.getElementById("vlakje" + vlaknummer).innerText = ""; 
 }
