@@ -42,10 +42,10 @@ article {
 	margin: 40px;
 }
 article:nth-child(1) {
-	background-color: white;
+	background-color: white; /* zorgt dat de eerste foto aan de binnenkant van de border wit blijft*/
 }
 article:nth-child(2) {
-	background-color: black;
+	background-color: black; /* zorgt dat de tweede foto aan de binnenkant van de border zwart blijft*/
 }
 
 img {
