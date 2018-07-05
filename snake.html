@@ -5,36 +5,32 @@
 
 
 <style>
-    p{
-        text-align: center;
-        font-size: 35px;
-        margin-top: 10px;
-    }
+
        body{
-       background-color: black;
-        text-align: center;
-        color: #990000;
-        font-size: 80px;      
+       background-color: black; /*background color word zwart*/
+        text-align: center;/* alles in het midden*/
+        color: #990000; /* tekst word mooi rood*/
+        font-size: 80px;    /*games word 80 pixels groot */
        }
        
        button{
-          border-style: solid;
-          border-color: #990000;
-          border-width: 3px;
+          border-style: solid; /* een solide rand rond de button tag*/
+          border-color: #990000; /* mooie border kleur*/
+          border-width: 3px;/* een border van 3 pixels wijd*/
          
        }
        
        canvas{
-              border-style: solid;
-              border-color: #990000;
-              margin-top: 50px;
+              border-style: solid;/*solid border rond de canvas */
+              border-color: #990000; /* met een mooie rode kleur*/
+              margin-top: 50px;/* en 50 pixels onder Snake*/
        }
     
 </style>    
 <body>
        Snake <br />
-       <canvas id="gc" width="400" height="400"></canvas> <br />
-       <button onclick="location.reload()">reset</button></p>
+       <canvas id="gc" width="400" height="400"></canvas> <br /> <!--maakt een canvas aan dat ik met javascript aanpas -->
+       <button onclick="location.reload()">reset</button></p> <!-- een knop die de pagina herlaad en dus reset on click-->
        </body>
 
 
@@ -42,79 +38,79 @@
     <script>
       
         
-        window.onload=function() {
-        canv=document.getElementById("gc");
-        ctx=canv.getContext("2d");
-        document.addEventListener("keydown",keyPush);
-        setInterval(game,1000/15);
+        window.onload=function() { // dit gebeurt allemaal als de pagina laad door deze regel
+        canv=document.getElementById("gc"); // target alles met het id: gc
+        ctx=canv.getContext("2d"); // dit geeft de context aan dat alles op dit canvas in 2 dimensies is
+        document.addEventListener("keydown",keyPush); // een javascript eigen functie die aangeeft dat als je een toest indrukt de keyPush functie begint, dit is om de snake te besturen
+        setInterval(game,1000/15); //het interval voor iedere beweging 
     }
-    px=py=10;
-    gs=tc=20;
-    ax=ay=15;
-    xv=yv=0;
-    trail=[];
-    tail = 5;
+    px=py=10; //de positie van de speler
+    gs=tc=20; //de grote en grote van de intervals
+    ax=ay=15; // positie van de rode blokjes
+    xv=yv=0; // snelheid van de speler
+    trail=[]; // positie vand e trail als een geheel
+    tail = 5; // hoeveelheid blokjes in de trail
     function game() {
-        px+=xv;
-        py+=yv;
+        px+=xv; // de speler x positie is de positie + de snelheid
+        py+=yv; // de speler y positie is de positie + de snelheid
         if(px<0) {
-            px= tc-1;
+            px= tc-1; // zet de positie van speler naar de andere kant
         }
         if(px>tc-1) {
-            px= 0;
+            px= 0; // doet de speler weer verschijnen
         }
         if(py<0) {
-            py= tc-1;
+            py= tc-1; //hetzelfde als net maar dan met de y
         }
         if(py>tc-1) {
             py= 0;
         }
-        ctx.fillStyle="black";
-        ctx.fillRect(0,0,canv.width,canv.height);
+        ctx.fillStyle="black"; // maakt de canvas zwart
+        ctx.fillRect(0,0,canv.width,canv.height); //maakt alles zwart ten groote van de canvas
 
-        ctx.fillStyle="lime";
-        for(var i=0;i<trail.length;i++) {
-            ctx.fillRect(trail[i].x*gs,trail[i].y*gs,gs-2,gs-2);
-            if(trail[i].x==px && trail[i].y==py) {
-                   tail=5;
-                   break;
+        ctx.fillStyle="lime"; // hoe de blokjes eruitzien
+        for(var i=0;i<trail.length;i++) { //op het moment dat een blokje word geraakt word de trail grooter
+            ctx.fillRect(trail[i].x*gs,trail[i].y*gs,gs-2,gs-2); // hiermee word er een nieuw 20bij20 blokje gemaakt
+            if(trail[i].x==px && trail[i].y==py) { // als je je eigen staart raakt dan ga je terug naar 5 blokjes
+                   tail=5; //5 blokjes ddus, dit kan ook meer of minder zijn als je wil
+                   break; 
             }
         }
            
            
-        trail.push({x:px,y:py});
+        trail.push({x:px,y:py}); // verandering van de trail positie tegenover die van de speler
         while(trail.length>tail) {
-        trail.shift();
+        trail.shift(); // de trail word continu geupdate
         }
 
-        if(ax==px && ay==py) {
+        if(ax==px && ay==py) { // als je als speler een een rood blokje raakt
             tail++;
-            ax=Math.floor(Math.random()*tc);
-            ay=Math.floor(Math.random()*tc);
+            ax=Math.floor(Math.random()*tc); //zorgt dat er een nieuw blokje verschijnt op een random locatie op de map
+            ay=Math.floor(Math.random()*tc);//hetzelfde maar dan voor de y locatie
         }
-        ctx.fillStyle="red";
-        ctx.fillRect(ax*gs,ay*gs,gs-2,gs-2);
+        ctx.fillStyle="red"; // maakt de blokjes rood
+        ctx.fillRect(ax*gs,ay*gs,gs-2,gs-2); // kiest de groote van de blokjes
     }
-    function keyPush(evt) {
-        switch(evt.keyCode) {
-            case 37:
-                xv=-1;yv=0;
+    function keyPush(evt) { //hiermee word de snake bestuurd
+        switch(evt.keyCode) { //voor verschillende mogenlijkheden en terugroepend op de keyPush van eerder
+            case 37: //left key
+                xv=-1;yv=0; //veranderd richting
                 break;
-            case 38:
-                xv=0;yv=-1;
+            case 38: // up key
+                xv=0;yv=-1; //veranderd richting
                 break;
-            case 39:
-                xv=1;yv=0;
+            case 39: // right key
+                xv=1;yv=0; //veranderd richting
                 break;
-            case 40:
-                xv=0;yv=1;
+            case 40: // left key
+                xv=0;yv=1; //veranderd richting
                 break;
         }
     }
            
              
        
-    </script>
+    </script> //yeet
 
 
 
